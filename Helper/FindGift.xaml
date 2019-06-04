@@ -1,0 +1,16 @@
+﻿<Window x:Class="DaruDarNotification.Helper.FindGift"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DaruDarNotification.Helper"
+        mc:Ignorable="d"
+        Title="Найден новый дар!" Height="295.068" Width="315.184">
+    <Grid>
+        <Label Content="Название" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="66"/>
+        <Label Content="Ссылка" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="66"/>
+        <Label x:Name="LinkLabel" Content="Ссылка" HorizontalAlignment="Left" Margin="81,36,0,0" VerticalAlignment="Top" Width="218"/>
+        <Label x:Name="NameLabel" Content="Ссылка" HorizontalAlignment="Left" Margin="81,10,0,0" VerticalAlignment="Top" Width="218"/>
+
+    </Grid>
+</Window>

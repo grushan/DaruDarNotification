@@ -1,0 +1,54 @@
+﻿<Window x:Class="DaruDarNotification.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DaruDarNotification"
+        mc:Ignorable="d"
+        Title="DaruDar Notificator" Height="376" Width="529.533">
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="292*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="countryBox" HorizontalAlignment="Left" Margin="122,10,0,0" VerticalAlignment="Top" Width="176" SelectionChanged="CountryBox_SelectionChanged" Grid.ColumnSpan="2"/>
+        <Button Content="Загрузить" HorizontalAlignment="Left" Margin="84.6,313,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="1"/>
+        <TextBox x:Name="tb" HorizontalAlignment="Left" Height="23" Margin="10,313,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="regionBox" HorizontalAlignment="Left" Margin="122,45,0,0" VerticalAlignment="Top" Width="176" SelectionChanged="RegionBox_SelectionChanged" IsEnabled="False" Grid.ColumnSpan="2"/>
+        <Label Content="Страна" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="105" Grid.ColumnSpan="2"/>
+        <Label Content="Регион" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="105" Grid.ColumnSpan="2"/>
+        <Label Content="Город" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Width="105" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="cityBox" HorizontalAlignment="Left" Margin="122,76,0,0" VerticalAlignment="Top" Width="176" IsEnabled="False" SelectionChanged="CityBox_SelectionChanged_1" Grid.ColumnSpan="2"/>
+        <Label Content="Интересующие рубрики" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="CheckBox1" Content="Компьютер" HorizontalAlignment="Left" Margin="16,130,0,0" VerticalAlignment="Top" Tag="computer" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox2" Content="Телефоны и КПК" HorizontalAlignment="Left" Margin="16,149,0,0" VerticalAlignment="Top" Tag="phones" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox3" Content="Электроника" HorizontalAlignment="Left" Margin="16,169,0,0" VerticalAlignment="Top" Tag="electronic" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox4" Content="Компьютерные игры" HorizontalAlignment="Left" Margin="16,189,0,0" VerticalAlignment="Top" Tag="games" Grid.ColumnSpan="2" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox5" Content="Фото и видео" HorizontalAlignment="Left" Margin="16,209,0,0" VerticalAlignment="Top" Tag="photo" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox6" Content="Авто-Мото-Вело" HorizontalAlignment="Left" Margin="16,229,0,0" VerticalAlignment="Top" Tag="drive" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox7" Content="Гигиена и медицина" HorizontalAlignment="Left" Margin="16,249,0,0" VerticalAlignment="Top" Tag="health" Grid.ColumnSpan="2" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox8" Content="Детям" HorizontalAlignment="Left" Margin="16,269,0,0" VerticalAlignment="Top" Tag="baby" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox9" Content="Дом и офис" Grid.Column="1" HorizontalAlignment="Left" Margin="26.6,130,0,0" VerticalAlignment="Top" Tag="home" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox10" Content="Животные и растения" Grid.Column="1" HorizontalAlignment="Left" Margin="26.6,150,0,0" VerticalAlignment="Top" Tag="fauna" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox11" Content="Игрушки и сувениры" Grid.Column="1" HorizontalAlignment="Left" Margin="26.6,170,0,0" VerticalAlignment="Top" Tag="toys" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox12" Content="Интернет и инвайты" Grid.Column="1" HorizontalAlignment="Left" Margin="26.6,189,0,0" VerticalAlignment="Top" Tag="internet" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox13" Content="Кино и мультфильмы" Grid.Column="1" HorizontalAlignment="Left" Margin="26.6,209,0,0" VerticalAlignment="Top" Tag="movie" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox14" Content="Книги и журналы" Grid.Column="1" HorizontalAlignment="Left" Margin="26.6,229,0,0" VerticalAlignment="Top" Tag="books" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox15" Content="Коллекционирование" Grid.Column="1" HorizontalAlignment="Left" Margin="26.6,249,0,0" VerticalAlignment="Top" Tag="collect" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox16" Content="Купоны и скидки" Grid.Column="1" HorizontalAlignment="Left" Margin="26.6,269,0,0" VerticalAlignment="Top" Tag="counpons" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox17" Content="Музыка" Grid.Column="1" HorizontalAlignment="Left" Margin="188.6,130,0,0" VerticalAlignment="Top" Tag="music" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox18" Content="Одежда и аксессуары" Grid.Column="1" HorizontalAlignment="Left" Margin="188.6,150,0,0" VerticalAlignment="Top" Tag="clothes" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox19" Content="Парфюмерия и косметика" Grid.Column="1" HorizontalAlignment="Left" Margin="188.6,170,0,0" VerticalAlignment="Top" Tag="beauty" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox20" Content="Рукоделие " Grid.Column="1" HorizontalAlignment="Left" Margin="188.6,189,0,0" VerticalAlignment="Top" Tag="handmade" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox21" Content="Спорт и отдых" Grid.Column="1" HorizontalAlignment="Left" Margin="188.6,209,0,0" VerticalAlignment="Top" Tag="sport" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox22" Content="Украшения и бижутерия" Grid.Column="1" HorizontalAlignment="Left" Margin="188.6,229,0,0" VerticalAlignment="Top" Tag="jewellery" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox23" Content="Услуги и помощь" Grid.Column="1" HorizontalAlignment="Left" Margin="188.6,249,0,0" VerticalAlignment="Top" Tag="skills" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <CheckBox x:Name="CheckBox24" Content="Другое" Grid.Column="1" HorizontalAlignment="Left" Margin="188.6,269,0,0" VerticalAlignment="Top" Tag="other" IsTabStop="False" Checked="CheckBox_Checked"/>
+        <Label Content="Проверять каждые" HorizontalAlignment="Left" Margin="182.6,7,0,0" VerticalAlignment="Top" Width="121" Grid.Column="1"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="303.6,9,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="33" UndoLimit="75" TextAlignment="Center"/>
+        <Label Content="мин." HorizontalAlignment="Left" Margin="341.6,7,0,0" VerticalAlignment="Top" Width="38" Grid.Column="1"/>
+        <Button Content="Добавить" Grid.Column="1" HorizontalAlignment="Left" Margin="317.6,42,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label Content="Автозапуск" HorizontalAlignment="Left" Margin="182.6,38,0,0" VerticalAlignment="Top" Width="121" Grid.Column="1"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\bin\Debug\DaruDarNotification.exe.config
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\bin\Debug\DaruDarNotification.exe
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\bin\Debug\DaruDarNotification.pdb
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification.csprojAssemblyReference.cache
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\MainWindow.g.cs
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\App.g.cs
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification_MarkupCompile.cache
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification_MarkupCompile.lref
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\MainWindow.baml
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification.g.resources
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification.Properties.Resources.resources
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification.csproj.GenerateResource.cache
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification.csproj.CoreCompileInputs.cache
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification.exe
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification.pdb
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\Helper\FindGift.g.cs
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\Helper\FindGift.baml
