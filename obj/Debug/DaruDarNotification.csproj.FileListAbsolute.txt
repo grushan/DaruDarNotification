@@ -15,3 +15,7 @@ C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\Da
 C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification.pdb
 C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\Helper\FindGift.g.cs
 C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\Helper\FindGift.baml
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\bin\Debug\Hardcodet.Wpf.TaskbarNotification.pdb
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\bin\Debug\Hardcodet.Wpf.TaskbarNotification.xml
+C:\Users\wapif\source\repos\DaruDarNotification\DaruDarNotification\obj\Debug\DaruDarNotification.csproj.CopyComplete

@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DaruDarNotification.Helper"
         mc:Ignorable="d"
-        Title="Найден новый дар!" Height="295.068" Width="315.184">
+        Title="Найден новый дар!" Height="133.468" Width="281.584" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Content="Название" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="66"/>
-        <Label Content="Ссылка" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="66"/>
-        <Label x:Name="LinkLabel" Content="Ссылка" HorizontalAlignment="Left" Margin="81,36,0,0" VerticalAlignment="Top" Width="218"/>
-        <Label x:Name="NameLabel" Content="Ссылка" HorizontalAlignment="Left" Margin="81,10,0,0" VerticalAlignment="Top" Width="218"/>
+        <Label x:Name="LinkLabel" Content="Ссылка" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="248"/>
+        <Label x:Name="NameLabel" Content="Название" HorizontalAlignment="Left" Margin="9,10,0,0" VerticalAlignment="Top" Width="249" />
+        <Button Content="Интересует" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_1"/>
+        <Button Content="Пропустить" HorizontalAlignment="Left" Margin="138,68,0,0" VerticalAlignment="Top" Width="120
+                " Click="Button_Click"/>
 
     </Grid>
 </Window>

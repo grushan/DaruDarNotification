@@ -25,5 +25,16 @@ namespace DaruDarNotification.Helper
             NameLabel.Content = name;
             LinkLabel.Content = link;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(LinkLabel.Content.ToString());
+            this.Close();
+        }
     }
 }

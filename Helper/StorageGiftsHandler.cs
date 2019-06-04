@@ -20,7 +20,7 @@ namespace DaruDarNotification.Helper
             {
                 Directory.CreateDirectory(directoryName);
             }
-            else if (File.Exists(Path.Combine(directoryName, fileName)) == false)
+            if (File.Exists(Path.Combine(directoryName, fileName)) == false)
             {
                 File.Create(Path.Combine(directoryName, fileName));
             }
@@ -34,7 +34,6 @@ namespace DaruDarNotification.Helper
             }
             for (int i = 0; i< limiter; i++)
             {
-               // MessageBox.Show(gifts[i].link);
                 f.WriteLine(gifts[i].link);
             }
             f.Close();
@@ -44,7 +43,10 @@ namespace DaruDarNotification.Helper
         public void CompareGifts (List<Gift> gifts, string category)
         {
             fileName = category + ".txt";
-            
+            if (Directory.Exists(directoryName) == false)
+            {
+                Directory.CreateDirectory(directoryName);
+            }
             if (File.Exists(Path.Combine(directoryName, fileName)) == false)
             {
                 File.Create(Path.Combine(directoryName, fileName));

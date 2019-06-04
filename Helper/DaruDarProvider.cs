@@ -97,11 +97,9 @@ namespace DaruDarNotification.Helper
             public string link;
             public string image;
         }
-        public List<Gift> GetGifts(string category)
+        public List<Gift> GetGifts(string country, string region, string city, string category)
         {
-            string link = @"http://darudar.org/search/rss/?q=&country=168&region=1948&city=447733&category=" + category + "&status%5B0%5D=0&status%5B1%5D=1&rel=0&ln=";
-            MessageBox.Show(category);
-            MessageBox.Show(link);
+            string link = String.Format(@"http://darudar.org/search/rss/?q=&country={0}&region={1}&city={2}&category={3}&status%5B0%5D=0&status%5B1%5D=1&rel=0&ln=", country, region, city, category);
 
             HttpWebRequest rew = (HttpWebRequest)WebRequest.Create(link);
             HttpWebResponse resp = (HttpWebResponse)rew.GetResponse();
@@ -110,11 +108,7 @@ namespace DaruDarNotification.Helper
             StreamReader giftsStreamReader = new StreamReader(giftsStream, Encoding.UTF8);
 
             string xml = giftsStreamReader.ReadToEnd();
-            //Console.WriteLine(xml);
             return ParseGifts(xml);
-
-            //MessageBox.Show(xml);
-
         }
         private List<Gift> ParseGifts(string xml_)
         {
@@ -155,7 +149,6 @@ namespace DaruDarNotification.Helper
 
                             }
 
-                           // MessageBox.Show(miniElement.Value, miniElement.Name + " Элемент " + i.ToString());
                         }
                         i++;
                         
@@ -164,7 +157,6 @@ namespace DaruDarNotification.Helper
                     
             }
             return gifts;
-            //MessageBox.Show(gifts.Count.ToString());
         }
         public List <Category> GetCategories()
         {
